@@ -9,7 +9,7 @@ CREATE TABLE priorities(
 );
 
 CREATE TABLE contact_request(
-    id_email SERIAL PRIMARY KEY,
+    id_contact SERIAL PRIMARY KEY,
     id_country INTEGER NOT NULL,
     id_priority INTEGER NOT NULL,
     name VARCHAR(50) NOT NULL,
