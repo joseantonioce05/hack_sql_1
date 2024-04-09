@@ -1,12 +1,12 @@
-create table countries(
-  id_country serial primary key,
-  name varchar(50) not null  
+CREATE TABLE countries(
+    id_country SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL  
 );
 
-create table users(
- id_users serial primary key,
- id_country integer not null,
- email varchar(100) not null,
- name varchar (50) not null,
- foreign key (id_country) references countries (id_country)   
+CREATE TABLE users(
+    id_users SERIAL PRIMARY KEY,
+    id_country INTEGER NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    name VARCHAR (50) NOT NULL,
+    FOREIGN KEY (id_country) REFERENCES countries (id_country)   
 );
